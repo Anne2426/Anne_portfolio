@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anne Anita Beaula P — Aspiring Data Analyst & AI Data Science Student. Portfolio showcasing analytics, visualization, and machine learning projects." />
+  <meta name="keywords" content="Data Analyst, AI, Data Science, Power BI, Python, Machine Learning, Portfolio" />
+  <meta name="author" content="Anne Anita Beaula P" />
+  <title>Anne Anita Beaula P — Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-bar"></div>
+
+  <!-- NAVBAR -->
+  <nav id="nav">
+    <button class="nav-logo" onclick="scrollTo2('hero')" aria-label="Home">
+      <div class="nav-logo-icon">A</div>
+      <span class="nav-logo-text">Anne Anita</span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <button class="nav-link active" onclick="scrollTo2('hero')">Home</button>
+      <button class="nav-link" onclick="scrollTo2('about')">About</button>
+      <button class="nav-link" onclick="scrollTo2('skills')">Skills</button>
+      <button class="nav-link" onclick="scrollTo2('experience')">Experience</button>
+      <button class="nav-link" onclick="scrollTo2('projects')">Projects</button>
+      <button class="nav-link" onclick="scrollTo2('certifications')">Certifications</button>
+      <button class="nav-link" onclick="scrollTo2('achievements')">Achievements</button>
+      <button class="nav-link" onclick="scrollTo2('contact')">Contact</button>
+    </div>
+    <div class="nav-right">
+      <a href="mailto:anneanitap@gmail.com" class="btn btn-p btn-sm">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button onclick="scrollTo2('hero');closeMenu()">Home</button>
+    <button onclick="scrollTo2('about');closeMenu()">About</button>
+    <button onclick="scrollTo2('skills');closeMenu()">Skills</button>
+    <button onclick="scrollTo2('experience');closeMenu()">Experience</button>
+    <button onclick="scrollTo2('projects');closeMenu()">Projects</button>
+    <button onclick="scrollTo2('certifications');closeMenu()">Certifications</button>
+    <button onclick="scrollTo2('achievements');closeMenu()">Achievements</button>
+    <button onclick="scrollTo2('contact');closeMenu()">Contact</button>
+  </div>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+          <div class="badge">📈 Aspiring Data Analyst</div>
+          <h1 class="hero-name">
+            <span class="hero-name-1">Anne Anita</span>
+            <span class="hero-name-2">Beaula P</span>
+          </h1>
+          <p class="hero-subtitle">Aspiring Data Analyst | AI &amp; Data Science Student</p>
+          <p class="hero-desc">Transforming data into meaningful insights through analytics, visualization, and machine learning.</p>
+          <div class="hero-btns">
+            <button class="btn btn-p" onclick="scrollTo2('contact')">Get In Touch →</button>
+            <button class="btn btn-g" onclick="scrollTo2('projects')">View Projects</button>
+          </div>
+          <div class="hero-socials">
+            <a href="mailto:anneanitap@gmail.com" class="social-btn" title="Email" aria-label="Email">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/anne-p-22253b2a3" class="social-btn" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/Anne2426" class="social-btn" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-right">
+          <div class="avatar-wrap">
+            <div class="orbit-outer"></div>
+            <div class="orbit-inner"></div>
+            <div class="orbit-dot"></div>
+            <div class="avatar-glow"></div>
+            <div class="avatar">
+              <img src="images/profile.jpg" alt="Anne Anita Beaula P" />
+            </div>
+          </div>
+
+          <a href="images/Anne_Anita_Resume.pdf" download="Anne_Anita_Beaula_Resume.pdf" class="resume-card">
+            <div class="resume-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <div class="resume-info">
+              <span class="resume-title">Download Resume</span>
+              <span class="resume-sub">Anne_Anita_Beaula_Resume.pdf</span>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <div class="stats-mini">
+            <div class="stat-card"><div class="stat-val">5+</div><div class="stat-lbl">Internships</div></div>
+            <div class="stat-card"><div class="stat-val">7+</div><div class="stat-lbl">Projects</div></div>
+            <div class="stat-card"><div class="stat-val">7+</div><div class="stat-lbl">Certifications</div></div>
+            <div class="stat-card"><div class="stat-val">3</div><div class="stat-lbl">Awards</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="alt">
+    <div class="container">
+      <div class="badge">👤 About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="divider"></div>
+      <div class="about-grid">
+        <div class="card card-accent">
+          <div class="card-label">Professional Summary</div>
+          <p>I am an Artificial Intelligence and Data Science student passionate about Data Analytics, Data Visualization, and Machine Learning. I enjoy transforming raw data into actionable insights through exploratory data analysis, dashboard development, and statistical analysis.</p>
+          <p style="margin-top:1rem">My experience includes real-world analytics projects involving customer behavior, business intelligence, HR analytics, supply chain optimization, sentiment analysis, and banking analytics. I have completed multiple internships applying Python, SQL, Power BI, Tableau, and Excel to solve business problems and support data-driven decision-making.</p>
+        </div>
+        <div class="about-right">
+          <div class="card card-accent">
+            <div class="card-icon-row">
+              <div class="icon-box">🎓</div>
+              <div class="card-label" style="margin-bottom:0">Education</div>
+            </div>
+            <div class="edu-institution">Erode Sengunthar Engineering College</div>
+            <div class="edu-degree">Bachelor of Technology (B.Tech)</div>
+            <div class="edu-field">Artificial Intelligence &amp; Data Science</div>
+            <span class="period-pill">2023 – 2027</span>
+          </div>
+          <div class="card card-accent">
+            <div class="card-icon-row">
+              <div class="icon-box">🎯</div>
+              <div class="card-label" style="margin-bottom:0">Career Objective</div>
+            </div>
+            <p>Seeking challenging roles in Data Analytics, Data Science, and Machine Learning to leverage analytical skills for data-driven decision making, meaningful business insights, and impactful data solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="badge">⚙️ Skills</div>
+      <h2 class="section-title">My Tech Stack</h2>
+      <div class="divider"></div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section id="experience" class="alt">
+    <div class="container">
+      <div class="badge">💼 Experience</div>
+      <h2 class="section-title">Internship Journey</h2>
+      <div class="divider"></div>
+      <div class="timeline-wrap" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="badge">📁 Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="divider"></div>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+  <section id="certifications" class="alt">
+    <div class="container">
+      <div class="badge">🏅 Certifications</div>
+      <h2 class="section-title">Credentials &amp; Learning</h2>
+      <div class="divider"></div>
+      <div class="cert-grid" id="cert-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ACHIEVEMENTS ═══════════════ -->
+  <section id="achievements">
+    <div class="container">
+      <div class="badge">🏆 Achievements</div>
+      <h2 class="section-title">Awards &amp; Recognition</h2>
+      <div class="divider"></div>
+      <div class="ach-grid" id="ach-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact" class="alt">
+    <div class="container">
+      <div class="badge">✉ Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="divider"></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-desc">I am actively seeking internship and full-time opportunities in Data Analytics, Data Science, and Machine Learning. Whether you have a project, role, or collaboration — let's talk!</p>
+          <div class="contact-links">
+            <a href="mailto:anneanitap@gmail.com" class="clink card">
+              <div class="clink-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div><div class="clink-lbl">Email</div><div class="clink-val">anneanitap@gmail.com</div></div>
+            </a>
+            <a href="tel:+917094320277" class="clink card">
+              <div class="clink-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+              </div>
+              <div><div class="clink-lbl">Phone</div><div class="clink-val">+91 70943 20277</div></div>
+            </a>
+            <a href="https://linkedin.com/in/anne-p-22253b2a3" class="clink card" target="_blank" rel="noopener">
+              <div class="clink-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div><div class="clink-lbl">LinkedIn</div><div class="clink-val">anne-p-22253b2a3</div></div>
+            </a>
+            <a href="https://github.com/Anne2426" class="clink card" target="_blank" rel="noopener">
+              <div class="clink-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </div>
+              <div><div class="clink-lbl">GitHub</div><div class="clink-val">github.com/Anne2426</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="card form-card">
+          <div class="form-title">Send a Message</div>
+          <div class="success-msg" id="success-msg">✓ Message sent! Anne will get back to you soon.</div>
+          <div class="form-row">
+            <div class="f-group">
+              <label class="f-label" for="f-name">Your Name</label>
+              <input id="f-name" class="f-input" type="text" placeholder="John Smith" />
+            </div>
+            <div class="f-group">
+              <label class="f-label" for="f-email">Email</label>
+              <input id="f-email" class="f-input" type="email" placeholder="john@company.com" />
+            </div>
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="f-subj">Subject</label>
+            <input id="f-subj" class="f-input" type="text" placeholder="Internship Opportunity" />
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="f-msg">Message</label>
+            <textarea id="f-msg" class="f-textarea" placeholder="Tell me about the opportunity..."></textarea>
+          </div>
+          <button class="btn btn-p" style="width:100%;justify-content:center" onclick="submitForm()">
+            Send Message
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="footer-text">Designed &amp; Built by <span class="footer-name">Anne Anita Beaula P</span> &nbsp;·&nbsp; Aspiring Data Analyst &amp; AI Student &nbsp;·&nbsp; 2026</p>
+      <p class="footer-sub">anneanitap@gmail.com &nbsp;·&nbsp; github.com/Anne2426</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
